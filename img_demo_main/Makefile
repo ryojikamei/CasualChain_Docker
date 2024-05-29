@@ -16,4 +16,4 @@ image: runcc
 .PHONY: push
 push: image
 	docker tag casualchain:demo_$(timestamp) $(account)/$(repository):demo_$(timestamp)
-	docker push $(account)/$(repository)):demo_$(timestamp)
+	docker push $(account)/$(repository):demo_$(timestamp)

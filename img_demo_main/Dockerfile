@@ -3,7 +3,7 @@ FROM node:lts-buster-slim
 LABEL maintainer="Ryoji Kamei <ryoji.kamei@gmail.com>"
 LABEL version="main"
 
-RUN apt update && \
+RUN apt update && apt upgrade -y && \
     apt install -y git libcurl4 psmisc && \
     git clone https://github.com/ryojikamei/CasualChain.git && \
     cd CasualChain && \
